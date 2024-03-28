@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Background Image</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      color: #fff;
+    }
+
+    img{
+      padding: 20px;
+    }
+
+    .navbar {
+      margin: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar-brand {
+      float: left;
+      padding: 15px 20px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navbar-menu {
+      float: right;
+    }
+
+    .navbar-item {
+      float: left;
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .navbar-item:last-child {
+      background-color: green;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    a {
+      font-size: large;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#" style="color: yellow;" class="navbar-brand">🚀 Rocket Dicer 🎲</a>
+  <div class="navbar-menu">
+    <a href="/about" class="navbar-item">About</a>
+    <a href="/login" class="navbar-item">Login</a>
+    <a href="/register" class="navbar-item">Sign Up</a>
+    <a href="/play" class="navbar-item">BUY NOW</a>
+  </div>
+</div>
+
+
+<!-- app.component.html -->
+<router-outlet></router-outlet>
+
+</body>
+</html>

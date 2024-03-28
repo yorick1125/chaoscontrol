@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Div</title>
+<style>
+  .button-container {
+    overflow: hidden; /* Clearfix */
+    display: flex; /* Change to flex display */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  .button {
+    width: 150px; /* Adjust width as needed */
+    margin-bottom: 10px; /* Add some space between buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative; /* Add positioning for the image */
+    text-align: center; /* Center text horizontally */
+  }
+  .red {
+    background-color: red;
+    color: white;
+  }
+  .green {
+    background-color: green;
+    color: white;
+  }
+  .blue {
+    background-color: blue;
+    color: white;
+  }
+  .icon {
+    max-height: 27px;
+    position: absolute;
+    left: 5px; /* Adjust as needed for positioning */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>
+</head>
+<body>
+
+<div class="button-container">
+  <a href="https://yorick1125.github.io/BomboFighterz/" class="button red" style="height: 45px;">
+    <img style="height: 50px;" src="../../assets/images/Super_Smash_Bros._Brawl_Logo.png">
+  </a>
+  <a href="" class="button green">
+    <img class="icon" style="height: 40px;" src="../../assets/images/kaizen.png" alt="Smash Icon">
+    Survival
+  </a>
+  <a href="" class="button blue">
+    <img class="icon" style="height: 40px;" src="../../assets/images/brain.png" alt="Smash Icon">
+    Story
+  </a>
+</div>
+
+</body>
+</html>
