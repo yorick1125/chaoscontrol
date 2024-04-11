@@ -1,0 +1,55 @@
+.game-details {
+  background-color: #19a75b;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Align items with space between */
+}
+
+/* Media query for screens at least 1200px wide */
+@media screen and (min-width: 1200px) {
+  .game-details {
+    margin: 0 300px; /* Apply margin of 300px on each side */
+  }
+}
+
+
+.info {
+  display: block;
+}
+
+.game-details > div {
+  /* Optional styling for the inner divs */
+  /* Example:
+  width: 45%; 
+  */
+}
+
+  
+  .game-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .game-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .game-details strong {
+    font-weight: bold;
+  }
+
+  .slideshow-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  
+  .slide img {
+    display: block;
+  }
+  
+
+  

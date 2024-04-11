@@ -41,23 +41,78 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  u{
+    color: blue;
+  }
 </style>
 </head>
 <body>
 
-<div class="button-container">
-  <a href="https://yorick1125.github.io/BomboFighterz/" class="button red" style="height: 45px;">
-    <img style="height: 50px;" src="../../assets/images/Super_Smash_Bros._Brawl_Logo.png">
-  </a>
-  <a href="" class="button green">
-    <img class="icon" style="height: 40px;" src="../../assets/images/kaizen.png" alt="Smash Icon">
-    Survival
-  </a>
-  <a href="" class="button blue">
-    <img class="icon" style="height: 40px;" src="../../assets/images/brain.png" alt="Smash Icon">
-    Story
-  </a>
+
+
+<div class="game-details">
+  <div>
+    <h1>Final Destination</h1>
+    <img style="width: 400px; height: 500px; margin: 10px;" src="../../assets/images/gon_fishing_hunter_x_hunter_by_nico2713_dfywl2z-pre.jpg" >
+    <p> Travel in time a million years in the past and become the hunter your ancestors evolved to become while learning about the theory of everything and exploring the meaning of life.</p>
+    <p><strong>Genre:</strong> Combat, Open World, RPG, Survival</p>
+    <p><strong>Release Date:</strong> <u> November 25th 2026</u></p>
+    <strong>Price:</strong> <s> $59.99</s> <h2>Free with discount code: ROCKET!</h2>
+    <button style="margin-bottom: 25px;">Checkout<img src="" ></button>
+
+  </div>
+
+
+  <div class="info" style="text-align: center;">
+    <h1>Genres:</h1>
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="../../assets/images/fight.png" style="width: 200px; height: 200px; margin: 10px;">
+        <p>Combat</p>
+      </div>
+      <div class="slide">
+        <img src="../../assets/images/jag.png" style="width: 200px; height: 200px; margin: 10px;">
+        <p>Open World (Africa)</p>
+      </div>
+      <div class="slide">
+        <img src="../../assets/images/sky.avif" style="width: 300px; height: 200px; margin: 10px;">
+        <p>RPG</p>
+      </div>
+      <div class="slide">
+        <img src="../../assets/images/rocket.png" style="width: 200px; height: 200px; margin: 10px;">
+        <p>Survival</p>
+      </div>
+      <div class="slide">
+        <img src="../../assets/images/strawhats.jpg" style="width: 300px; height: 200px; margin: 10px;">
+        <p>Story</p>
+      </div>
+    </div>
+  </div>
+  
+
 </div>
+
+<div class="button-container">
+
+
+</div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var slides = document.getElementsByClassName("slide");
+    for (var i = 0; i < slides.length; i++) {
+      //slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+</script>
 
 </body>
 </html>
