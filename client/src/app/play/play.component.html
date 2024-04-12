@@ -4,98 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Button Div</title>
-<style>
-  .button-container {
-    overflow: hidden; /* Clearfix */
-    display: flex; /* Change to flex display */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-  }
-  .button {
-    width: 150px; /* Adjust width as needed */
-    margin-bottom: 10px; /* Add some space between buttons */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    position: relative; /* Add positioning for the image */
-    text-align: center; /* Center text horizontally */
-  }
-  .red {
-    background-color: red;
-    color: white;
-  }
-  .green {
-    background-color: green;
-    color: white;
-  }
-  .blue {
-    background-color: blue;
-    color: white;
-  }
-  .icon {
-    max-height: 27px;
-    position: absolute;
-    left: 5px; /* Adjust as needed for positioning */
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  u{
-    color: blue;
-  }
-</style>
 </head>
 <body>
 
 
-
-<div class="game-details">
-  <div>
-    <h1>Final Destination</h1>
-    <img style="width: 400px; height: 500px; margin: 10px;" src="../../assets/images/gon_fishing_hunter_x_hunter_by_nico2713_dfywl2z-pre.jpg" >
-    <p> Travel in time a million years in the past and become the hunter your ancestors evolved to become while learning about the theory of everything and exploring the meaning of life.</p>
-    <p><strong>Genre:</strong> Combat, Open World, RPG, Survival</p>
-    <p><strong>Release Date:</strong> <u> November 25th 2026</u></p>
-    <strong>Price:</strong> <s> $59.99</s> <h2>Free with discount code: ROCKET!</h2>
-    <button style="margin-bottom: 25px;">Checkout<img src="" ></button>
-
-  </div>
-
-
-  <div class="info" style="text-align: center;">
-    <h1>Genres:</h1>
-    <div class="slideshow-container">
-      <div class="slide">
-        <img src="../../assets/images/fight.png" style="width: 200px; height: 200px; margin: 10px;">
-        <p>Combat</p>
-      </div>
-      <div class="slide">
-        <img src="../../assets/images/jag.png" style="width: 200px; height: 200px; margin: 10px;">
-        <p>Open World (Africa)</p>
-      </div>
-      <div class="slide">
-        <img src="../../assets/images/sky.avif" style="width: 300px; height: 200px; margin: 10px;">
-        <p>RPG</p>
-      </div>
-      <div class="slide">
-        <img src="../../assets/images/rocket.png" style="width: 200px; height: 200px; margin: 10px;">
-        <p>Survival</p>
-      </div>
-      <div class="slide">
-        <img src="../../assets/images/strawhats.jpg" style="width: 300px; height: 200px; margin: 10px;">
-        <p>Story</p>
+<div class="game">
+  <div class="game-details">
+    <div>
+      <h1 class="title">Final Destination</h1>
+      <!-- <img style="width: 400px; height: 500px; margin: 10px;" src="../../assets/images/gon_fishing_hunter_x_hunter_by_nico2713_dfywl2z-pre.jpg" >-->
+      <video width="640" height="360" controls> 
+        <source src="path_to_your_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  
+      <div class="info" style="text-align: center; width: 640px;">
+        <div class="slideshow-container" style="width: 200%; text-align: center;">
+          <div class="slide" style="width: 20%">
+            <img src="../../assets/images/fight.png" style="width: 100%">
+            <p>Combat</p>
+          </div>
+          <div class="slide" style="width: 20%">
+            <img src="../../assets/images/jag.png" style="width: 100%; text-align: center;">
+            <p>Open World</p>
+          </div>
+          <div class="slide" style="width: 20%">
+            <img src="../../assets/images/sky.avif" style="width: 100%">
+            <p>RPG</p>
+          </div>
+          <div class="slide" style="width: 20%">
+            <img src="../../assets/images/rocket.png" style="width: 100%">
+            <p>Survival</p>
+          </div>
+          <div class="slide" style="width: 20%">
+            <img src="../../assets/images/strawhats.jpg" style="width: 100%">
+            <p>Story</p>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="description">
+      <img src="../../assets/images/jag.png" style="width: 400px; height: 300px; margin-top: 100px;">
+      <p style="width: 400px;"> Travel in time a million years in the past and become the hunter your ancestors evolved to become while learning about the theory of everything and exploring the meaning of life.</p>
+      <p><strong>Genre:</strong> Combat, Open World, RPG, Survival</p>
+      <p><strong>Release Date:</strong> <u> November 25th 2026</u></p>
+    
+      <strong>Price:</strong> <s> $59.99</s> <h2>Free with discount code: ROCKET!</h2>
+      <button style="margin-bottom: 25px;">Checkout<img src="" ></button>
+    </div>
   </div>
+</div>
   
 
-</div>
 
-<div class="button-container">
-
-
-</div>
 
 <script>
   var slideIndex = 0;

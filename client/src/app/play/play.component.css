@@ -1,9 +1,17 @@
 .game-details {
   background-color: #19a75b;
-  padding: 20px;
+  padding: 20px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex; /* Use flexbox */
   justify-content: space-between; /* Align items with space between */
+  width: 60%;
+}
+
+.title{
+  color: yellow;
+  background-color: blueviolet;
+  width: 300px;
+  text-align: center;
 }
 
 /* Media query for screens at least 1200px wide */
@@ -14,10 +22,6 @@
 }
 
 
-.info {
-  display: block;
-}
-
 .game-details > div {
   /* Optional styling for the inner divs */
   /* Example:
@@ -26,30 +30,97 @@
 }
 
   
-  .game-details h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .game-details p {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .game-details strong {
-    font-weight: bold;
-  }
+.game-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
-  .slideshow-container {
-    position: relative;
-    overflow: hidden;
-  }
-  
+.game-details p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
 
-  
-  .slide img {
-    display: block;
-  }
-  
+.game-details strong {
+  font-weight: bold;
+}
 
-  
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.slide img {
+  display: block;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.slideshow-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap if it exceeds container width */
+}
+
+.slide {
+  flex: 0 0 auto; /* Allow each slide to grow and shrink as needed */
+  margin: 10px;  /*Add margin between slides */
+  text-align: center; /* Center content inside each slide */
+}
+
+.game {
+  display: inline;
+  background-color: #19a75b;
+}
+
+
+.description {
+  overflow: hidden; /* Clearfix */
+  display: flex; /* Change to flex display */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 50%;
+}
+.button {
+  width: 150px; /* Adjust width as needed */
+  margin-bottom: 10px; /* Add some space between buttons */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative; /* Add positioning for the image */
+  text-align: center; /* Center text horizontally */
+}
+.red {
+  background-color: red;
+  color: white;
+}
+.green {
+  background-color: green;
+  color: white;
+}
+.blue {
+  background-color: blue;
+  color: white;
+}
+.icon {
+  max-height: 27px;
+  position: absolute;
+  left: 5px; /* Adjust as needed for positioning */
+  top: 50%;
+  transform: translateY(-50%);
+}
+u{
+  color: blue;
+}
+
+.game {
+
+}
